@@ -1,0 +1,260 @@
+body,html {
+    font-family:"Yu Mincho" ;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5vw;
+    padding: bottom 0; ;
+}
+
+h2::after {
+    content:url(img/見出しアンダーライン.png);
+    display: block;
+    margin-top: -20px;
+    
+
+}
+/*ヘッダー*/
+header {
+    background-image: url(img/ウッド背景.jpg);
+    background-size:120% ;
+    background-repeat: repeat-x;
+}
+
+
+/*ナビ*/
+#nav-pc{
+    display: inline;
+    font-size: 2vw;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    }
+
+#nav-pc > a {
+    text-decoration: none;
+    margin: 10px;
+
+}
+
+#nav-pc > a:link {
+    color: #fff;
+}
+
+/*メインビジュ*/
+#main-visual {
+    background-image: url(img/ウッド背景.jpg);
+    background-size: 120%;
+}
+
+#top {
+    position: relative;
+}
+
+#top > p {
+    color: #fff;
+    font-size: 10vw;
+    font-weight:500;
+    position: absolute;
+    top:30% ;
+    left:50% ;
+    transform: translate(-50%,-50%);
+    
+}
+
+#top-img {
+    width:100%;
+}
+
+#top-flex {
+    display: flex;
+}
+
+#top-flex > div {
+    background-color: #1a1818;
+    width: 50vw;
+    color: #fff;
+    padding: 30px 20px 20px 20px;
+    font-size: 2vw;
+}
+
+#second-img {
+    width: 50vw;
+}
+
+/*メニュー*/
+#menu {
+    text-align: center;
+    font-size: 2vw;
+}
+
+#menu-flex {
+    background-color: #080a09;
+}
+#black-menu {
+    display: flex;
+}
+
+#black-menu > img { 
+    width: 50vw;
+    margin: 0 0 0 auto;
+    
+}
+
+#black-menu > p {
+    color: #fff;
+    text-align: center;
+    text-shadow:1px 2px 3px #000;
+    font-weight: bold;
+    margin-top: 15%;
+    font-size: 2.5vw;
+    position: absolute;
+    left: 20%;   
+}
+
+#menu-price {
+    width: 100%;
+}
+
+/*カルーセルスライダー*/
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    justify-content:start;
+    position: relative;
+    z-index: 10;
+    animation: loop-slide 20s infinite linear 1s both;
+    
+    
+}
+@keyframes loop-slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+#shadow {
+    position: relative;
+    top: -7vw;
+    bottom: auto;
+    z-index: 5;
+    width: 100vw;
+    
+
+}
+
+/*ご案内*/
+#guide {
+    text-align: center;
+    justify-content: space-around;
+}
+
+#guide-flex {
+    display: flex;
+    width: 100%;
+}
+
+#guide-flex > div {
+    width: 50%;
+    margin: 10px;
+    font-size: 2vw;
+}
+
+
+.guide-img {
+    width: 30vw;
+}
+
+
+
+/*アクセス*/
+#acsess {
+    background-image: url(img/アクセス背景.jpg);
+    background-size: 100%;
+    height: 45vw;
+}
+
+#acsess-flex {
+    display: flex;
+    justify-content:space-around;
+}
+
+
+#map {
+    width: 40vw;
+    height: 30vw;
+}
+
+/*お問い合わせ*/
+#contact {
+    text-align: center;
+}
+
+input {
+    border-color: #abc900;
+    outline-color:#abc900;
+    height: 30px;
+}
+#button{
+    width: 10vw;
+    height: 4vw;
+}
+textarea {
+    border-color: #abc900;
+    outline-color: #abc900;
+}
+span {
+    color: red;
+}
+
+/*フッター*/
+footer { 
+    background-image: url(img/ウッド背景.jpg);
+    background-size: 120%;
+    color: #fff;
+}
+
+#footer-title {
+    font-size: 3vw;
+    text-align: center;
+
+}
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10% 0 10%;
+}
+
+#footer-mill {
+    width: 10vw;
+}
+
+#footer > div > a {
+    font-size: 2vw;
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer-adress {
+    width: 50vw;
+}
+
+#copylight {
+    margin-left: 30%;
+    font-size: 1.8vw;
+    color: #fff;
+}
